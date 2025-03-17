@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif, monospace;
+    list-style-type: none;
+
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.grid
+{
+    width: 1200px;
+    max-width: 100%;
+}
+/* hero section */
+#hero-section
+{
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 20px 80px; 
+    display: flex;
+    justify-content: center;
+
+}
+
+#hero-section .hero-navbar
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.hero-navbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+.hero-navbar ul li a{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero-main
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.hero-main div 
+{
+    flex: 1 0 40%;
+    
+}
+
+
+.hero-main div header
+{
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.hero-image
+{
+    background-image: url(./image/Infinitive\ caslte.jpg);
+    background-repeat: no-repeat;
+    background-position: center -490px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 7px -6px 17px 7px;
+}
+
+.hero-description
+{
+    color: #e5e7eb;
+    font-size: 18px;    
+    padding-right: 100px;
+}
+
+.hero-main button{
+    padding: 8px 30px;
+    background-color: #c661f2;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 800;
+}
+
+/* main section */
+
+#main
+{
+    background-image: url(./image/wallpapersden.com_76338-3157x1776.jpg);
+    background-repeat: no-repeat;
+    background-position:  top;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+.main__info{
+    margin: 60px 0;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+.main__content{
+    display: flex;
+    justify-content: center;
+    padding: 0 60px;
+    gap: 30px;
+}
+.main__content--box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__inside
+{
+    
+    width: 180px;
+    height: 180px;
+    border: 6px solid #3882f6;
+    border-radius: 8px;
+}
+
+.main__content .main__content--box:first-child .box__inside
+{
+    background-image: url(./image/tanjiro-kamado-4334x2160-20019.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 6px solid #ac074f;
+
+}
+
+.main__content .main__content--box:nth-child(2) .box__inside
+{
+    background-image: url(./image/nezuko-kamado-cute-3840x2160-18712.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #e33580;
+
+}
+
+.main__content .main__content--box:nth-child(3) .box__inside
+{
+    background-image: url(./image/zenitsu-agatsuma-3840x2160-17045.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #f3d40f;
+}
+
+.main__content .main__content--box:last-child .box__inside
+{
+    background-image: url(./image/inosuke-hashibira-3840x2160-12117.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top  left;
+    border: 6px solid #3882f6;
+}
+
+.main__content--box p{
+
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+#quote
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://wallpapercave.com/wp/wp4879382.jpg);
+    background-size: cover;
+    background-position: right -320px;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    
+}
+#quote p:first-child
+{
+    font-size: 36px;
+    font-weight:lighter;
+    font-style:italic;
+    padding: 0 120px;
+    color: black;
+}
+#quote i
+{
+    display: block;
+    font-size: 26px;
+    justify-self: flex-end;
+    padding-right: 200px;
+    margin-top: 10px;
+}
+
+.sign__up
+{
+    display: flex;
+    justify-content: center;
+    padding: 140px 0;
+}
+
+.sign__up--box
+{
+    padding: 60px 160px;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 8px;
+}
+
+.sign__up--box div p:first-child
+{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.sign__up--box button
+{
+    background-color: transparent;
+    border-radius: 6px;
+    color: white;
+    border: 2px solid white;
+    padding: 2px 40px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+footer
+{
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    padding: 40px;
+    align-self: stretch;
+}
+
+
